@@ -2,14 +2,14 @@ body{
   text-align: center;
 }
 .content1{
-  width: 60%;
+  width: 100%;
   overflow: hidden;
   margin: auto;
 }
 .content2, .content3{
   position: relative;
-  width: 60%;
-  margin: 10px auto;
+  width: 100%;
+  margin: 100px auto;
 }
 .content1-img, .content2-img, .content3-img{
   width: 100%;
@@ -26,6 +26,6 @@ body{
 .text1 >span, .text2 >span{
   color: white;
   display: inline-block;
-  font-size: 50px;
+  font-size: 20px;
   font-weight: bold;
 }
