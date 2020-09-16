@@ -10,6 +10,16 @@ body{
   position: relative;
   margin: 0 auto;
 }
+@media screen and (min-width: 960px) {
+  .content1, .content2, .content3{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 959px) {
+  .content1, .content2, .content3{
+    width: 100%;
+  }
+}
 
 .content1-img, .content2-img, .content3-img{
   width: 100%;
@@ -19,32 +29,16 @@ body{
   position: absolute;
   top: 5%;
 }
+
 .text2{
   position: absolute;
   bottom: 5%;
   right: 0%;
 }
+
 .text1 >span, .text2 >span{
   color: white;
   display: inline-block;
   font-size: 50px;
   font-weight: bold;
-}
-
-@media screen and (min-width: 960px) {
-  .content1, .content2, .content3{
-    width: 60%;
-  }
-  .text1 >span, .text2 >span{
-    font-size: 50px;
-  }
-
-}
-@media screen and (max-width: 959px) {
-  .content1, .content2, .content3{
-    width: 100%;
-  }
-  .text1 >span, .text2 >span{
-    font-size: 20px;
-  }
 }
