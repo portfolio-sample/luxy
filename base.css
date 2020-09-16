@@ -1,19 +1,20 @@
 body{
   text-align: center;
 }
+
 .content1{
-  width: 100%;
   overflow: hidden;
   margin: auto;
 }
 .content2, .content3{
   position: relative;
-  width: 100%;
-  margin: 100px auto;
+  margin: 0 auto;
 }
+
 .content1-img, .content2-img, .content3-img{
   width: 100%;
 }
+
 .text1{
   position: absolute;
   top: 5%;
@@ -26,6 +27,24 @@ body{
 .text1 >span, .text2 >span{
   color: white;
   display: inline-block;
-  font-size: 20px;
+  font-size: 50px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 960px) {
+  .content1, .content2, .content3{
+    width: 60%;
+  }
+  .text1 >span, .text2 >span{
+    font-size: 50px;
+  }
+
+}
+@media screen and (max-width: 959px) {
+  .content1, .content2, .content3{
+    width: 100%;
+  }
+  .text1 >span, .text2 >span{
+    font-size: 20px;
+  }
 }
