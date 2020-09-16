@@ -1,50 +1,39 @@
-body{
-  text-align: center;
-}
+<!DOCTYPE html>
+<html>
 
-.content1{
-  overflow: hidden;
-  margin: auto;
-}
-.content2, .content3{
-  position: relative;
-  margin: 0 auto;
-}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <script src="luxy.js"></script>
+  <title></title>
+</head>
 
-.content1-img, .content2-img, .content3-img{
-  width: 100%;
-}
+<body>
 
-.text1{
-  position: absolute;
-  top: 5%;
-}
-.text2{
-  position: absolute;
-  bottom: 5%;
-  right: 0%;
-}
-.text1 >span, .text2 >span{
-  color: white;
-  display: inline-block;
-  font-size: 50px;
-  font-weight: bold;
-}
+<div id="luxy">
+  <div class="content1">
+    <img src="img/audience.jpg" class="luxy-el content1-img" data-speed-y="5">
+  </div>
 
-@media screen and (min-width: 960px) {
-  .content1, .content2, .content3{
-    width: 60%;
-  }
-  .text1 >span, .text2 >span{
-    font-size: 50px;
-  }
+  <div class="content2">
+    <div class="text1">
+      <span data-horizontal="1" data-speed-X="5" class="luxy-el">Parallax - Code</span>
+    </div>
+    <div class="text2">
+      <span data-horizontal="1" data-speed-X="-5" class="luxy-el">Inertial - Scroll</span>
+    </div>
+    <img class="content2-img" src="img/bouldering.jpg" alt="">
+  </div>
 
-}
-@media screen and (max-width: 959px) {
-  .content1, .content2, .content3{
-    width: 100%;
-  }
-  .text1 >span, .text2 >span{
-    font-size: 20px;
-  }
-}
+  <div class="content3">
+    <img class="content3-img" src="img/soccer.jpg" alt="">
+  </div>
+</div>
+
+</body>
+</html>
+
+<script>
+  luxy.init({});
+</script>
