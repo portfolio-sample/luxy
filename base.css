@@ -1,0 +1,31 @@
+body{
+  text-align: center;
+}
+.content1{
+  width: 60%;
+  overflow: hidden;
+  margin: auto;
+}
+.content2, .content3{
+  position: relative;
+  width: 60%;
+  margin: 10px auto;
+}
+.content1-img, .content2-img, .content3-img{
+  width: 100%;
+}
+.text1{
+  position: absolute;
+  top: 5%;
+}
+.text2{
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+}
+.text1 >span, .text2 >span{
+  color: white;
+  display: inline-block;
+  font-size: 50px;
+  font-weight: bold;
+}

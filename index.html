@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <script src="luxy.js"></script>
+  <title></title>
+</head>
+
+<body>
+
+<div class="content1">
+  <img src="img/audience.jpg" class="luxy-el content1-img" data-speed-y="40">
+</div>
+
+<div class="content2">
+  <div class="text1">
+    <span data-horizontal="1" data-speed-X="5" class="luxy-el">Parallax - Code</span>
+  </div>
+  <div class="text2">
+    <span data-horizontal="1" data-speed-X="-5" class="luxy-el">Inertial - Scroll</span>
+  </div>
+  <img class="content2-img" src="img/bouldering.jpg" alt="">
+</div>
+
+<div class="content3">
+  <img class="content3-img" src="img/soccer.jpg" alt="">
+</div>
+
+</body>
+</html>
+
+<div id="luxy">
+  <div class="content1-wrapper">
+    <img src="img/audience.jpg" class="luxy-el content1" data-speed-y="40">
+  </div>
+  <img class="content2" src="img/bouldering.jpg" alt="">
+  <img class="content3" src="img/soccer.jpg" alt="">
+</div>
+
+<script>
+  luxy.init({});
+</script>
